@@ -1,0 +1,16 @@
+[package]
+name = "ledger-cgi"
+version = "0.1.0"
+authors = ["mateus"]
+
+[lib]
+name = "ledger"
+
+[dependencies]
+postgres = { version = "*", features = ["with-uuid", "with-chrono"] }
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
+uuid = { version = "0.5.1", features = ["serde", "v4"] }
+chrono = "*"
+curl = "*"
